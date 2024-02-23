@@ -7,7 +7,7 @@ const port = 3000;
 app.use(express.static(path.join(__dirname, '../client/dist/proyecto-angular/browser')))
 
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '../dist/client/proyecto-angular/browser/index.html'));
+    res.sendFile(path.join(__dirname, '../client/dist/proyecto-angular/browser/index.html'));
 });
 
 app.listen(port, () => {
