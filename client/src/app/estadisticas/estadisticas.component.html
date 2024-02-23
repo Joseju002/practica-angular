@@ -1,0 +1,32 @@
+<div class="container-fluid titulos-color p-5 mb-1 text-center">
+    <h1>Estadísticas del usuario</h1>
+</div>
+<div class="text-center mb-3">
+    @if (isFollowing) {
+        <button (click)="isFollowing = !isFollowing" class="btn btn-danger">Dejar de seguir</button>
+    } @else {
+        <button (click)="isFollowing = !isFollowing" class="btn btn-primary">Seguir</button>
+    }
+</div>
+<div class="card text-center mb-5 mx-5 pt-3">
+    <div class="card-body">
+        <div class="row">
+            <div class="col-sm-4">
+                <h4>Seguidores</h4>
+                @if (isFollowing) {
+                    <p>{{seguidores + 1}}</p>
+                } @else {
+                    <p>{{seguidores}}</p>
+                }
+            </div>
+            <div class="col-sm-4">
+                <h4>Seguidos</h4>
+                <p>{{seguidos}}</p>
+            </div>
+            <div class="col-sm-4">
+                <h4>Publicaciones</h4>
+                <p>{{publicaciones}}</p>
+            </div>
+        </div>
+    </div>
+</div>

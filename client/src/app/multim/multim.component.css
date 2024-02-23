@@ -1,0 +1,17 @@
+audio {
+    width: 100%;
+}
+
+.imagen-centrada {
+    text-align: center;
+}
+
+.imagen-centrada img {
+    border-radius: 35px;
+    border: solid #068FFF;
+    margin-right: 15px;
+}
+
+.cc {
+    text-align: center;
+}
